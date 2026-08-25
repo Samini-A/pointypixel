@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="120 220 1700 380" role="img" aria-labelledby="title desc">
+  <title id="title">Pointy Pixel</title>
+  <desc id="desc">Angular Pointy Pixel wordmark with the tagline Every Pixel Has a Point.</desc>
+  <g fill="#f8f8f8">
+    <path d="M168 255H315L329 269V385H203V437H168V255ZM203 290V350H294V290H203Z" fill-rule="evenodd"/>
+    <path d="M365 310H512V437H365V310ZM400 344V403H477V344H400Z" fill-rule="evenodd"/>
+    <path d="M552 310H587V437H552V310Z"/>
+    <path d="M631 310H765L772 317V437H737V344H666V437H631V310Z"/>
+    <path d="M825 268H860V310H919V344H860V403H919V437H825V344H800V310H825V268Z"/>
+    <path d="M954 310H989V402H1056V310H1091V425L1013 487L1039 437H954V310Z"/>
+    <path d="M1133 255H1280L1294 269V385H1168V437H1133V255ZM1168 290V350H1259V290H1168Z" fill-rule="evenodd"/>
+    <path d="M1330 310H1365V437H1330V310Z"/>
+    <path d="M1400 310H1439L1470 349L1501 310H1540L1490 374L1540 437H1501L1470 398L1439 437H1400L1450 374L1400 310Z"/>
+    <path d="M1574 310H1714V389H1610V403H1714V437H1581L1574 430V310ZM1610 344V369H1679V344H1610Z" fill-rule="evenodd"/>
+    <path d="M1750 255H1785V437H1750V255Z"/>
+  </g>
+  <g fill="#ef0713">
+    <path d="M552 259H587V294H552V259Z"/>
+    <path d="M1457 360H1483V388H1457V360Z"/>
+  </g>
+  <g font-family="Arial, Helvetica, sans-serif" font-size="24" font-weight="400">
+    <text x="574" y="560" fill="#f8f8f8" letter-spacing="13">EVERY PIXEL HAS A POINT</text>
+    <rect x="1182" y="555" width="6" height="6" fill="#ef0713"/>
+  </g>
+</svg>

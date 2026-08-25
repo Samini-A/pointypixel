@@ -91,11 +91,40 @@
   /**
    * Mobile nav toggle
    */
+  const setMobileNav = (open) => {
+    const body = select('body')
+    const toggle = select('.mobile-nav-toggle')
+    const icon = toggle ? toggle.querySelector('i') : null
+
+    body.classList.toggle('mobile-nav-active', open)
+    toggle?.setAttribute('aria-expanded', String(open))
+    toggle?.setAttribute('aria-label', open ? 'Close profile navigation' : 'Open profile navigation')
+    icon?.classList.toggle('bi-list', !open)
+    icon?.classList.toggle('bi-x', open)
+  }
+
   on('click', '.mobile-nav-toggle', function(e) {
-    select('body').classList.toggle('mobile-nav-active')
-    this.classList.toggle('bi-list')
-    this.classList.toggle('bi-x')
+    setMobileNav(!select('body').classList.contains('mobile-nav-active'))
   })
+
+  document.addEventListener('click', (event) => {
+    const body = select('body')
+    const header = select('#header')
+    const toggle = select('.mobile-nav-toggle')
+    if (!body.classList.contains('mobile-nav-active')) return
+    if (header?.contains(event.target) || toggle?.contains(event.target)) return
+    setMobileNav(false)
+  })
+
+  document.addEventListener('keydown', (event) => {
+    if (event.key !== 'Escape' || !select('body').classList.contains('mobile-nav-active')) return
+    setMobileNav(false)
+    select('.mobile-nav-toggle')?.focus()
+  })
+
+  window.addEventListener('resize', () => {
+    if (window.innerWidth >= 1200) setMobileNav(false)
+  }, { passive: true })
 
   /**
    * Scrool with ofset on links with a class name .scrollto
@@ -106,10 +135,7 @@
 
       let body = select('body')
       if (body.classList.contains('mobile-nav-active')) {
-        body.classList.remove('mobile-nav-active')
-        let navbarToggle = select('.mobile-nav-toggle')
-        navbarToggle.classList.toggle('bi-list')
-        navbarToggle.classList.toggle('bi-x')
+        setMobileNav(false)
       }
       scrollto(this.hash)
     }
@@ -193,7 +219,9 @@
    * Initiate portfolio lightbox 
    */
   const portfolioLightbox = GLightbox({
-    selector: '.portfolio-lightbox'
+    selector: '.portfolio-lightbox',
+    descPosition: 'bottom',
+    moreLength: 9999
   });
 
   /**

@@ -7,8 +7,7 @@
   <meta content="A. Samini — game development, computer graphics, spatial computing, Unreal Engine, research, and teaching." name="description">
   <meta content="game developer, Unreal Engine, computer graphics, spatial computing, mixed reality" name="keywords">
   <!-- Favicons -->
-  <link href="/assets/img/favicon.png" rel="icon">
-  <link href="/assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+  <link href="/assets/brand/pointypixel-identity-icon-black.png" rel="icon" type="image/png">
   <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
 
@@ -21,29 +20,26 @@
   <link href="/assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
 
   <!-- Template Main CSS File -->
-  <link href="/assets/css/style.css" rel="stylesheet">
-  <link href="enhancements.css" rel="stylesheet">
+  <link href="/assets/css/style.css?v=20260821-mobile" rel="stylesheet">
+  <link href="enhancements.css?v=20260826-footer-logo" rel="stylesheet">
+  <link href="/assets/css/pointypixel-brand.css?v=20260826-icon-only" rel="stylesheet">
 
-  <!-- =======================================================
-  * Template Name: iPortfolio
-  * Updated: Jan 09 2024 with Bootstrap v5.3.2
-  * Template URL: https://bootstrapmade.com/iportfolio-bootstrap-portfolio-websites-template/
-  * Author: BootstrapMade.com
-  * License: https://bootstrapmade.com/license/
-  ======================================================== -->
 </head>
 
 <body>
 
   <!-- ======= Mobile nav toggle button ======= -->
-  <i class="bi bi-list mobile-nav-toggle d-xl-none"></i>
+  <button class="mobile-nav-toggle d-xl-none" type="button" aria-expanded="false" aria-controls="header" aria-label="Open profile navigation">
+    <i class="bi bi-list" aria-hidden="true"></i>
+    <span class="visually-hidden">Menu</span>
+  </button>
 
   <!-- ======= Header ======= -->
   <header id="header">
     <div class="d-flex flex-column">
 
       <div class="profile">
-        <a class="profile-identity" href="/ali/">
+        <a class="profile-identity" href="/cv/">
           <img src="/assets/img/profile-img.jpg" alt="Portrait of A. Samini" class="img-fluid rounded-circle">
           <span class="profile-copy"><strong>A. Samini, PhD</strong><small>Pointy Pixel</small></span>
         </a>
@@ -56,7 +52,7 @@
 
       <nav id="navbar" class="nav-menu navbar">
         <ul>
-          <li><a href="#hero" class="nav-link scrollto active"><i class="bx bx-home"></i> <span>Home</span></a></li>
+          <li><a href="#hero" class="nav-link scrollto active"><i class="bx bx-home"></i> <span>Profile</span></a></li>
           <li><a href="#about" class="nav-link scrollto"><i class="bx bx-user"></i> <span>About</span></a></li>
           <li><a href="#resume" class="nav-link scrollto"><i class="bx bx-file-blank"></i> <span>Resume</span></a></li>
           <li><a href="#portfolio" class="nav-link scrollto"><i class="bx bx-book-content"></i> <span>Portfolio</span></a></li>
@@ -180,6 +176,15 @@
         <h3 class="resume-title experience-heading" data-aos="fade-up">Professional Experience</h3>
         <div class="experience-list">
             <article class="resume-item" data-aos="fade-up">
+              <h4>Founder &amp; Creative Technologist</h4>
+              <h5>2023–Present</h5>
+              <p><em>Pointy Pixel, Malmö, Sweden</em></p>
+              <ul>
+                <li>Founded and lead a creative technology studio working across game development, real-time 3D, spatial computing, and interactive storytelling.</li>
+                <li>Direct the creative and technical development of Dark Waves, a narrative adventure game built with Unreal Engine.</li>
+              </ul>
+            </article>
+            <article class="resume-item" data-aos="fade-up">
               <h4>Senior Research Engineer at IKEA Spatial Computing LAB</h4>
               <h5>2021–Present</h5>
               <p><em>IKEA Marketing & Communication AB, Inter IKEA of Sweden</em></p>
@@ -249,12 +254,12 @@
 
 
         <div class="row portfolio-container" data-aos="fade-up" data-aos-delay="100">
-          <div class="col-lg-6 col-md-6 portfolio-item"><a class="portfolio-card portfolio-lightbox" href="/assets/img/portfolio/portfolio-3.jpg" data-gallery="portfolioGallery" title="Real-time showroom visualization"><img src="/assets/img/portfolio/portfolio-3.jpg" alt="Unreal Engine visualization of an IKEA showroom"><span><strong>Real-Time Showroom Visualization</strong><small>Unreal Engine 5 · VR · Product visualization</small></span></a></div>
-          <div class="col-lg-6 col-md-6 portfolio-item"><a class="portfolio-card portfolio-lightbox" href="/assets/img/portfolio/portfolio-5.jpg" data-gallery="portfolioGallery" title="SymbiCloud command and control"><img src="/assets/img/portfolio/portfolio-5.jpg" alt="SymbiCloud drone mission visualization"><span><strong>SymbiCloud Command &amp; Control</strong><small>Unreal Engine · C++ · ROS · VR</small></span></a></div>
-          <div class="col-lg-6 col-md-6 portfolio-item"><a class="portfolio-card portfolio-lightbox" href="/assets/img/portfolio/portfolio-1.jpg" data-gallery="portfolioGallery" title="VR furniture planning"><img src="/assets/img/portfolio/portfolio-1.jpg" alt="Virtual reality furniture planner"><span><strong>VR Furniture Planning</strong><small>Interactive visualization · Spatial computing</small></span></a></div>
-          <div class="col-lg-6 col-md-6 portfolio-item"><a class="portfolio-card portfolio-lightbox" href="/assets/img/portfolio/portfolio-6.jpg" data-gallery="portfolioGallery" title="Hand-held AR interaction"><img src="/assets/img/portfolio/portfolio-6.jpg" alt="Hand-held augmented reality interaction research"><span><strong>Hand-Held AR Interaction</strong><small>Selection · Pose manipulation · User studies</small></span></a></div>
-          <div class="col-lg-6 col-md-6 portfolio-item"><a class="portfolio-card portfolio-lightbox" href="/assets/img/portfolio/portfolio-8.jpg" data-gallery="portfolioGallery" title="User-perspective rendering"><img src="/assets/img/portfolio/portfolio-8.jpg" alt="User-perspective rendering research"><span><strong>User-Perspective Rendering</strong><small>Perspective geometry · Augmented reality</small></span></a></div>
-          <div class="col-lg-6 col-md-6 portfolio-item"><a class="portfolio-card portfolio-lightbox" href="/assets/img/portfolio/portfolio-2.jpg" data-gallery="portfolioGallery" title="VR article browser"><img src="/assets/img/portfolio/portfolio-2.jpg" alt="Virtual reality article browser"><span><strong>VR Article Browser</strong><small>Information visualization · Interaction design</small></span></a></div>
+          <div class="col-lg-6 col-md-6 portfolio-item"><a class="portfolio-card portfolio-lightbox" href="/assets/img/portfolio/portfolio-3.jpg" data-gallery="portfolioGallery" title="Real-Time Showroom Visualization" data-description="An Unreal Engine 5 visualization built from a Revit model and then reconfigured and optimized with automatic doors, functional shopping carts, and AI-driven MetaHuman customers."><img src="/assets/img/portfolio/portfolio-3.jpg" alt="Unreal Engine visualization of an IKEA showroom"><span><strong>Real-Time Showroom Visualization</strong><small>Unreal Engine 5 · VR · Product visualization</small></span></a></div>
+          <div class="col-lg-6 col-md-6 portfolio-item"><a class="portfolio-card portfolio-lightbox" href="/assets/img/portfolio/portfolio-5.jpg" data-gallery="portfolioGallery" title="SymbiCloud Command &amp; Control" data-description="A command-and-control environment for collaborative rescue robotics, built with Unreal Engine, C++, and ROS. It visualizes the test area and receives live UAV positions, camera streams, and gimbal control for desktop and VR."><img src="/assets/img/portfolio/portfolio-5.jpg" alt="SymbiCloud drone mission visualization"><span><strong>SymbiCloud Command &amp; Control</strong><small>Unreal Engine · C++ · ROS · VR</small></span></a></div>
+          <div class="col-lg-6 col-md-6 portfolio-item"><a class="portfolio-card portfolio-lightbox" href="/assets/img/portfolio/portfolio-1.jpg" data-gallery="portfolioGallery" title="VR Furniture Planning" data-description="A native Meta Quest 3 mixed-reality application that loads an IKEA planner code, retrieves configuration data and 3D parts in real time, assembles the furniture, and lets the user position it at home."><img src="/assets/img/portfolio/portfolio-1.jpg" alt="Virtual reality furniture planner"><span><strong>VR Furniture Planning</strong><small>Interactive visualization · Spatial computing</small></span></a></div>
+          <div class="col-lg-6 col-md-6 portfolio-item"><a class="portfolio-card portfolio-lightbox" href="/assets/img/portfolio/portfolio-6.jpg" data-gallery="portfolioGallery" title="Hand-Held AR Interaction" data-description="Research into touch-minimal selection and six-degree-of-freedom pose manipulation using a tablet’s movement and user gaze. The work was published in Information in 2019."><img src="/assets/img/portfolio/portfolio-6.jpg" alt="Hand-held augmented reality interaction research"><span><strong>Hand-Held AR Interaction</strong><small>Selection · Pose manipulation · User studies</small></span></a></div>
+          <div class="col-lg-6 col-md-6 portfolio-item"><a class="portfolio-card portfolio-lightbox" href="/assets/img/portfolio/portfolio-8.jpg" data-gallery="portfolioGallery" title="User-Perspective Rendering" data-description="A perspective-geometry approach that makes a tracked tablet behave like an augmented window, continuously adapting the rendered view to the user’s position for UAV visualization."><img src="/assets/img/portfolio/portfolio-8.jpg" alt="User-perspective rendering research"><span><strong>User-Perspective Rendering</strong><small>Perspective geometry · Augmented reality</small></span></a></div>
+          <div class="col-lg-6 col-md-6 portfolio-item"><a class="portfolio-card portfolio-lightbox" href="/assets/img/portfolio/portfolio-2.jpg" data-gallery="portfolioGallery" title="VR Article Browser" data-description="A native Meta Quest 3 application built with Unreal Engine 5, C++, and Blueprints. Selecting a category queries IKEA’s live API, then downloads and displays the matching product models in real time."><img src="/assets/img/portfolio/portfolio-2.jpg" alt="Virtual reality article browser"><span><strong>VR Article Browser</strong><small>Information visualization · Interaction design</small></span></a></div>
         </div>
 
       </div>
@@ -302,15 +307,11 @@
   <!-- ======= Footer ======= -->
   <footer id="footer">
     <div class="container">
+      <a class="pp-brand pp-brand--icon-only pp-brand--footer-icon" href="/" aria-label="Return to the Pointy Pixel homepage">
+        <span class="pp-brand__mark" aria-hidden="true"><img src="/assets/brand/pointypixel-identity-mark.png" alt=""></span>
+      </a>
       <div class="copyright">
         &copy; 2026 <strong><span>A. Samini · Pointy Pixel</span></strong>
-      </div>
-      <div class="credits">
-        <!-- All the links in the footer should remain intact. -->
-        <!-- You can delete the links only if you purchased the pro version. -->
-        <!-- Licensing information: https://bootstrapmade.com/license/ -->
-        <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/iportfolio-bootstrap-portfolio-websites-template/ -->
-        Design framework by <a href="https://bootstrapmade.com/">BootstrapMade</a>
       </div>
     </div>
   </footer><!-- End  Footer -->
@@ -329,11 +330,10 @@
   <script src="/assets/vendor/php-email-form/validate.js"></script>
 
   <!-- Template Main JS File -->
-  <script src="/assets/js/main.js"></script>
+  <script src="/assets/js/main.js?v=20260826-project-captions"></script>
 
 </body>
 
 
 </html>
-
 

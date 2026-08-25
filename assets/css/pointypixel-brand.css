@@ -1,0 +1,50 @@
+.pp-brand {
+  position: relative;
+  z-index: 3;
+  display: inline-flex;
+  align-items: center;
+  flex: 0 0 auto;
+  gap: .8rem;
+  color: #f4f2ec;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: .68rem;
+  font-weight: 800;
+  letter-spacing: .16em;
+  line-height: 1;
+  text-transform: uppercase;
+  text-decoration: none;
+  white-space: nowrap;
+  transition: opacity .2s ease;
+}
+
+.pp-brand:hover,
+.pp-brand:focus { color: #f4f2ec; }
+.pp-brand:hover { opacity: .82; }
+
+.pp-brand__mark {
+  display: block;
+  flex: 0 0 3rem;
+  width: 3rem;
+  height: 3rem;
+  background: transparent;
+  line-height: 0;
+  overflow: visible;
+}
+
+.pp-brand__mark img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  max-width: none;
+  object-fit: contain;
+}
+
+.pp-brand--icon-only {
+  gap: 0;
+}
+
+.pp-brand--footer-icon {
+  display: flex;
+  width: max-content;
+  margin: 0 auto 1.75rem;
+}

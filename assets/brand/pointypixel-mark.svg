@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="Pointy Pixel">
+  <rect width="64" height="64" rx="4" fill="#070707"/>
+  <path d="M13 12h29l5 5v22H24v13H13V12Zm11 10v8h12v-8H24Z" fill="#f7f5ef" fill-rule="evenodd"/>
+  <rect x="44" y="8" width="9" height="9" fill="#ef0713"/>
+</svg>
